@@ -1,0 +1,61 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.venv/
+venv/
+
+# Editors and operating systems
+.DS_Store
+.idea/
+.vscode/
+*.swp
+*~
+
+# Personal configuration and credentials
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+*credentials*
+*secrets*
+CANDIDATE.md
+config/career.local.json
+
+# Local state and generated career materials
+data/
+job-search/tracker*.xlsx
+job-search/hh_search.local.json
+job-search/vacancies/
+job-search/resumes-adapted/
+job-search/cover-letters/
+job-search/application-kits/
+interview-coach/recordings/
+interview-coach/transcripts/
+interview-coach/analysis/
+interview-coach/scoreboard.csv
+interview-coach/scoreboard.md
+interview-coach/speech_metrics.csv
+
+# Audio, documents and local databases
+*.wav
+*.mp3
+*.m4a
+*.mp4
+*.mov
+*.pdf
+*.doc
+*.docx
+*.sqlite
+*.sqlite3
+*.db
+*.db-shm
+*.db-wal

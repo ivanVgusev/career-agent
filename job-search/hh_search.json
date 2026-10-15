@@ -1,0 +1,17 @@
+{
+  "queries": [
+    "junior python developer",
+    "junior AI engineer",
+    "LLM developer",
+    "prompt engineer",
+    "NLP developer",
+    "data analyst python"
+  ],
+  "area": "113",
+  "schedule": "remote",
+  "experience": ["noExperience", "between1And3"],
+  "period_days": 30,
+  "per_page": 50,
+  "pages_per_query": 1,
+  "minimum_score": 50
+}

@@ -1,0 +1,18 @@
+{
+  "speech": {
+    "base_url": "http://127.0.0.1:8200",
+    "health_path": "/health",
+    "transcription_path": "/v1/audio/transcriptions",
+    "remote_model": "Systran/faster-whisper-large-v3",
+    "local_model": "small",
+    "language": "ru",
+    "connect_timeout_seconds": 2.0,
+    "transcription_timeout_seconds": 1800.0
+  },
+  "job_sources": {
+    "hh.ru": {"enabled": true, "cooldown_hours": 0},
+    "remotive": {"enabled": true, "cooldown_hours": 6},
+    "jobicy": {"enabled": true, "cooldown_hours": 3},
+    "arbeitnow": {"enabled": true, "cooldown_hours": 1}
+  }
+}

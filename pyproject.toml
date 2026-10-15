@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "career-agent-workbench"
+version = "0.1.0"
+description = "Local vacancy search, application tracking and interview review workspace"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [{name = "Ivan Gusev"}]
+dependencies = [
+  "httpx>=0.28,<1",
+  "openpyxl>=3.1,<4",
+]
+
+[project.optional-dependencies]
+speech = [
+  "faster-whisper>=1.1,<2",
+  "nltk>=3.9,<4",
+]
+dev = [
+  "ruff>=0.9,<1",
+]
+
+[project.scripts]
+career-agent = "career_agent.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["career_agent*"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
